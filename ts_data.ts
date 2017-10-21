@@ -68,21 +68,21 @@ function throwError():never{
 }
 
 
-/* 오류생김
+/* 오류생김*/
 interface testIter {
     str : string,
     num : number;
 }
 let AjaxUtil  = function(ti:testIter){
     this.print = function():void{
-        console.log(str);
-        console.log(num);
+        console.log(ti.str);
+        console.log(ti.num);
     }
 }
 var test1 = {str:"홍길동", num:30}
 var au = new AjaxUtil(test1);
 au.print();
-*/
+
 
 
 //

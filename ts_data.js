@@ -48,21 +48,15 @@ try {
 function throwError() {
     throw new Error("nonono"); // throw는 에러를 발생시킴(?)
 }
-/* 오류생김
-interface testIter {
-    str : string,
-    num : number;
-}
-let AjaxUtil  = function(ti:testIter){
-    this.print = function():void{
-        console.log(str);
-        console.log(num);
-    }
-}
-var test1 = {str:"홍길동", num:30}
+var AjaxUtil = function (ti) {
+    this.print = function () {
+        console.log(ti.str);
+        console.log(ti.num);
+    };
+};
+var test1 = { str: "홍길동", num: 30 };
 var au = new AjaxUtil(test1);
 au.print();
-*/
 //
 var Car = /** @class */ (function () {
     function Car(pCarName) {
