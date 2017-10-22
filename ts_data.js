@@ -1,20 +1,20 @@
-var num1 = 3;
+let num1 = 3;
 num1 = "test";
-var num2 = 5;
-var str1 = "string";
-var str2 = "test";
-var numArr = [3, 5, 6];
-var numArr2 = [3, 4, 5];
+let num2 = 5;
+let str1 = "string";
+let str2 = "test";
+let numArr = [3, 5, 6];
+let numArr2 = [3, 4, 5];
 console.log(num1);
 console.log(numArr);
 //
-var tp;
+let tp;
 tp = ["1", 2];
-var anyTest = "any";
+let anyTest = "any";
 anyTest = 3;
 anyTest = true;
 anyTest = new Number(3);
-var anyArr = [1, 2, 3];
+let anyArr = [1, 2, 3];
 //
 function setUser() {
     return "test";
@@ -48,7 +48,7 @@ try {
 function throwError() {
     throw new Error("nonono"); // throw는 에러를 발생시킴(?)
 }
-var AjaxUtil = function (ti) {
+let AjaxUtil = function (ti) {
     this.print = function () {
         console.log(ti.str);
         console.log(ti.num);
@@ -58,15 +58,14 @@ var test1 = { str: "홍길동", num: 30 };
 var au = new AjaxUtil(test1);
 au.print();
 //
-var Car = /** @class */ (function () {
-    function Car(pCarName) {
+class Car {
+    constructor(pCarName) {
         this.pCarName = pCarName;
         this.carName = pCarName;
     }
-    return Car;
-}());
-var hyundai = new Car("Sonata");
-var pStr = "hyundai 자동차중 제 차는 : ";
+}
+let hyundai = new Car("Sonata");
+let pStr = "hyundai 자동차중 제 차는 : ";
 pStr += hyundai.carName;
 console.log(pStr);
 //# sourceMappingURL=ts_data.js.map
